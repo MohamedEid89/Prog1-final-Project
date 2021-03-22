@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Food Site</title>
+    <title>Food search</title>
 </head>
 <body>
     <div class="container">
         <div class="site-wrapper">
+                     <!---Searching block--->            
             <div class="search">
                 <h1 class="title">Hitta din food ingredienser</h1>
                 <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
@@ -19,15 +20,15 @@
                     <input type="text" class="search-content" placeholder="Skriv en ingredians" id="search-input">
                     <button type="submit" class="search-btn" id="search-box-btn">
                         <i class="fas fa-search"></i>
-                    </button>
+                    </button> 
                 </div>
             </div>
-
+                     <!---Result start--->
             <div class="show-result">
                 <h2 class="title">Din sökning resultat:</h2>
                 <div id="meal">
-                    <!---Meal item--->
-                    <div class="meal-item">
+                    <!---Meal item 1--->
+                    <!--  <div class="meal-item">
                         <div class="meal-img">
                             <img src="food.jpg" alt="food">
                         </div>
@@ -36,10 +37,52 @@
                             <a href="#" class="recept-btn">Hitta recept</a>
                         </div>
                     </div>
+                     <!---Meal item 2--->
+                     <!-- <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="food.jpg" alt="food">
+                        <!-- </div> -->
+                        <!-- <div class="meal-name">
+                            <h3>Pommis potato</h3>
+                            <a href="#" class="recept-btn">Hitta recept</a>
+                        </div>
+                    </div>-->
+                     <!---Meal item 3--->
+                     <!--<div class="meal-item">
+                        <div class="meal-img">
+                            <img src="food.jpg" alt="food">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Pommis potato</h3>
+                            <a href="#" class="recept-btn">Hitta recept</a>
+                        </div>
+                    </div>  -->
+
+                    <div class="meal-details">
+                        <!-- recipe close btn -->
+                        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                        </button>
+                        <!-- meal content -->
+                        <div class="meal-details-content">
+                            <p class="recipe-category">kategori namn</p>
+                            <div class="recipe-instruct">
+                                <h3>Information</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure saepe omnis quo cumque quos, molestias velit veniam minus ipsam alias voluptatem ex blanditiis numquam. Fuga voluptatem corrupti voluptate impedit numquam!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam, hic consectetur dolores autem saepe, assumenda unde praesentium quidem ipsa excepturi laborum, culpa optio veritatis facere ut necessitatibus accusantium officiis!</p>
+                            </div>
+                            <div class="recipe-meal-img">
+                                <img src="food.jpg" alt="">
+                            </div>
+                            <div class="recipe-link">
+                                <a href="#" target="_blank">Titta på</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="code.js"></script>
+    xx
 </body>
 </html>
