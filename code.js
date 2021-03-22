@@ -1,7 +1,7 @@
-const searchBtn = document.getElementById('search-btn');
+const searchBtn = document.getElementById('search-box-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
-const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const recipeCloseBtn = document.getElementById('recept-close-btn');
 
 // event search
 searchBtn.addEventListener('click', getMealList);
@@ -22,18 +22,18 @@ function getMealList(){
                 html += `
                     <div class = "meal-item" data-id = "${meal.idMeal}">
                         <div class = "meal-img">
-                            <img src = "${meal.strMealThumb}" alt = "food">
+                            <img src = "${meal.strMealThumb}" alt = "Mat">
                         </div>
                         <div class = "meal-name">
                             <h3>${meal.strMeal}</h3>
-                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                            <a href = "#" class = "recipe-btn">hitta Recepet</a>
                         </div>
                     </div>
                 `;
             });
             mealList.classList.remove('notFound');
         } else{
-            html = "Sorry, we didn't find any meal!";
+            html = "Tyvärr, vi hittade ingen måltid!";
             mealList.classList.add('notFound');
         }
 
